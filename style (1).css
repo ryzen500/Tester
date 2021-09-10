@@ -1,0 +1,241 @@
+/* Mewarnai berdasarkan Seleksi dari tag body */
+body{
+    /* Penggunaan Font */
+    font-family: 'Times New Roman', Times, serif;
+    padding:0;
+    margin:0;
+    /* Pemberian Warna */
+    background-color:rgb(255, 255, 255);
+}
+/* Kelas Container Wadah dari Seluruh yang berada di dalam tag header  */
+.container{
+    width:80%;
+    margin:auto;
+    /* Memastikan agar ketika ada  ada efek scroll dia akan memastikan untuk seluruh teman temannya tetap muat  */
+    overflow: hidden;
+}
+/* Mewarnai Berdasarkan seleksi dari tag header */
+header{
+    /* memberikan warna pada  latar belakang yang ada di tag header */
+    background-color: rgb(7, 0, 109);
+ /* pemberian warna putih untuk logo yang ada di tag header*/
+    color: seashell;
+    padding-top: 30px;
+    min-width: 70px;
+    /* pembuatan border (Bingkai ) bagian bawah */
+    border-bottom: 3px solid slateblue ;
+}
+
+/* Mewarnai dengan spesifikasi selector tag header dan id */
+header #branding{
+    /* Memindahkan posisi menjadi ke kiri */
+    float: left;
+}
+
+/* Mewarnai dengan spesifikasi selector tag header,h1 dan id */
+
+header #branding h1{
+    margin:0;
+}
+
+/* Mewarnai dengan spesifikasi selector tag header dan tag nav */
+/*nav akan rata kanan */
+header nav{
+    /* Memindahkan posisi  menjadi ke kanan */
+    float: right;
+    margin-top: 10px;
+}
+/* Penggunaan PseudoElement pada tag header dan tag a */
+header a:hover{
+    /* Ketika mencari huruf atau kalimat yang didalam tag a dan didalam header maka akan muncul Effek  */
+    color: steelblue;
+    font-weight: 15px;
+}
+/* Penggunaan Selector spesifikasi untuk mewarnai tag li dan tag a */
+li a{
+    /* Untuk Effect Ketebalan */
+    font-weight: 20px;
+    /* Warna text di tag a yang dimana tag a masih didalam tag li maka warnanya putih */
+    color: snow;
+    text-decoration: none;
+    /* Uppercase membuat tulisan yang ada didalam tag a dan dimana tag a didalam tag li menjadi besar */
+    text-transform: uppercase;
+/* Ukuran text */
+    font-size: 17px;
+}
+/* Selector Spesifikasi terhadap tag ul */
+ul{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+}
+/* Selector Spesifikasi terhadap tag header dan li */
+
+header li{
+    /* Dipindahkan ke kanan */
+    float: right;
+    /* Membuat menjadi kesamping */
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+/* Menspesifikasi tag header dan kelas higlight beserta tag a yang di dalam header diberikan perubahan warna */
+header .hightlight, header  a{
+    color:white;
+    font-weight: bold;
+}
+section{
+    /* Width mengatur Lebar */
+    width: 100%;
+}
+/* menspesifikasi tag  article dan id main-col */
+article#main-col{
+    /* Memindahkan posisi ke kiri */
+    float: left;
+    width: 65%;
+}
+/* Menspesifikasi berdasarkan kelas */
+.dark{
+    /* Ukuran */
+    padding: 15px;
+    /* Warna pada latar belakang */
+    background-color: teal;
+    /* Warna  */
+    color: wheat;
+    /*  Ukuran dari atas kebawah */
+    margin-top: 10px;
+    /* Ukuran dari bawah ke atas */
+    margin-bottom: 10px;
+}
+/* Menspesifikasi berdasarkan tag dan id*/
+aside#sidebar{
+    /* Memindahkan posisi ke kanan */
+    float: right;
+    padding: 5px;
+}  
+
+#showcase { 
+    min-height: 400px;
+    /* Memasukkan gambar melalui CSS */
+    background: url('img/headerbg.jpg');
+    background-size: cover;
+    /* nengahin text */
+    text-align: center;
+    /* membuat warna text menjadi putih */
+    color: white;
+}
+
+/* warnai text jadi tengah */
+/*selector dari id dan dari tag  */
+#showcase h1{
+    margin-top: 100px;
+    /* transform: translate(5%,10%); */
+    /* Ukuran dari font /text */
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+/* warnai textnya p */
+/* selector berdasarkan tag p */
+#showcase p{
+    font-size: 20px;
+}
+/* mewarnai konten kedua */
+#newsletter {
+    /* Ukuran  */
+    padding: 15px;
+/* Warna text */
+    color: white;
+    /* Warna latar belakang */
+    background: #353637;
+}
+/* Mewarnai konten kedua judulnya */
+/* selector id newsletter dan tag h1 */
+#newsletter h1{
+    float: left;
+}
+
+/* mewarnai id newsletter formnya  */
+/* selector id newsletter dan tag form  */
+
+#newsletter form{
+    /* Membuat posisi menjadi kekanan */
+    float: right;
+    /* ukuran dari atas kebawah */
+    margin-top: 15px;
+}
+
+/* Mewarnai id dan tag input beserta attribute type */
+#newsletter input[type="email"]{
+    /* Ukuran */
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+.button_1 {
+    /* ukuran */
+    height: 25px;
+    /* Warna latar belakang */
+    background-color: #808283;
+    /* Membuat bingkai  */
+    border: 0;
+
+    /* ukuran */
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+/* Selector warna dari id boxes */
+#boxes {
+    margin-top: 20px;
+}
+/* Selector Warna dari id boxes dan class box */
+#boxes .box{
+    /* membuat posisi menjadi kekiri */
+    float: left;
+    /* membuat text menjadi di tengah */
+    text-align: center;
+    /* Ukuran  */
+    width: 30%;
+    padding: 10px;
+}
+
+aside#sidebar input, aside#sidebar textarea {
+    width: 90%;
+    padding: 5px;
+}
+
+
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li ,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar {
+       float: none;
+       text-align: center; 
+       width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+}
+
+/* Menspesifikasi berdasarkan tag footer */
+footer{
+    /* Ukuran  */
+    padding: 20px;
+    
+    margin-top: 20px;
+    /* Warna dari text */
+    color: #f4f4f4;
+    /* Warna latar belakang */
+    background-color: grey;
+    /* membuat text menjadi di tengah */
+    text-align: center;
+}
